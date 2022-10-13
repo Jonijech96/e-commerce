@@ -172,3 +172,8 @@ function createCard () {
   localStorage.setItem("cards",JSON.stringify(cardArray));
 }
 
+//Scroll
+window.addEventListener("scroll", function () {
+  let header = document.querySelector("header");
+  header.classList.toggle("header--botton", window.scrollY > 0);
+});
