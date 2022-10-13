@@ -24,10 +24,10 @@
     <nav class="nav container">
       <div class="logo bold">Academlo</div>
       <div class="menu">
-        <div class="menu__close"><i class="fa-solid fa-xmark button-close pointer"></i></div>
+        <div class="menu__close menu__close--button"><i class="fa-solid fa-xmark button-close pointer"></i></div>
         <ul class="nav__list">
-          <li ><a class="nav__item" href="">Home</a></li>
-          <li ><a class="nav__item" href="">Products</a></li>
+          <li ><a class="nav__item" href="#">Home</a></li>
+          <li ><a class="nav__item" href="#products">Products</a></li>
         </ul>
       </div>
       <div class="nav__buttons">
@@ -44,7 +44,7 @@
             <span class="material-symbols-outlined">
               shopping_cart_checkout
               </span>
-              <span class="cart-number">3</span>
+              <span class="cart-number">0</span>
           </div>
           <div class="button-menu pointer">
             <span class="material-symbols-outlined">
@@ -59,19 +59,12 @@
     <div class="menu__close"><i class="fa-solid fa-xmark pointer cart__close"></i></div>
     <h3 class="cart__title">My Cart</h3>
     <div class="cart__grid">
-      <div class="cart__item">
-        <img class="cart__img" src="./assets/img/featured1.png" alt="">
-        <div class="cart__content">
-          <h3 class="card__title">Hoodies</h3>
-          <span class="filter__stock">Stock: 10</span><span class="cart__price">$14.00</span>
-          <p class="cart__subtotal">Subtotal: $14.00</p>
-          <button>-</button><span>1 units</span><button>+</button>
-        </div>
-        <span class="material-symbols-outlined">
-          delete
-          </span>
-      </div>
     </div>
+    <div class="cart__total">
+      <p>0 items</p>
+      <h3>$0.00</h3>
+    </div>
+    <button class="button cart__button-buy">BUY</button>
   </div>
   <!-- MAIN -->
   <main class="main">
@@ -85,13 +78,13 @@
         <p class="home__description">Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern design.</p>
         <span class="home__price">$14.00</span>
         <div class="home__btns">
-          <a class="button button--grey--small" href="">Discover</a>
+          <a class="button button--grey--small" href="#">Discover</a>
           <button class="button home__button">ADD TO CART</button>
         </div>
       </div>
     </section>
     <!-- PRODUCTS -->
-    <section class="products">
+    <section class="products" id="products">
       <div class="products__container container">
         <ul class="products__filter">
           <li class="border-right">
@@ -112,23 +105,14 @@
           </li>
         </ul>
         <div class="products__content">
-          <div class="products__card card">
-            <button class="card-add"><i class="fa-solid fa-plus"></i></button>
-            <div class="card__content__img">
-              <img class="card__img" src="./assets/img/featured1.png" alt="">
-            </div>
-            <div class="card__text">
-              <h3 class="card__price border-right">$14.00</h3><span class="filter__stock">Stock: 10</span>
-              <h3 class="card__title">Hoodies</h3>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
   </main>
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer__grid">
+  <footer class="footer ">
+    <div class="footer__grid container" >
       <div class="div">
         <h3 class="footer__title">Our information</h3>
         <p>Toluca - México</p>
